@@ -4,6 +4,7 @@ let answers = ["Charles Babbage", "8 Bits", "Vaccum Tube"];
 
 var que = document.getElementById('que');
 var result = document.getElementById('result');
+const modal = document.getElementById('modal');
 
 var a = document.getElementById('a');
 var b = document.getElementById('b');
@@ -16,6 +17,7 @@ let i=1;
 let k=0;
 
 nxt.addEventListener('click', (e)=> {
+    modal.close();
     if (result.innerHTML === "Right Answer") {
         result.innerHTML = "";
         if(i<questions.length){
@@ -41,13 +43,14 @@ function update() {
 }
 
 function hide() {
-    document.getElementById('start').style.display = 'none';
+    document.getElementById('hide').style.display = 'none';
 }
 
 const option = ['a', 'b', 'c', 'd'];
 option.forEach(buttonId=> {
     const opt = document.getElementById(buttonId);
     opt.addEventListener('click', (e)=> {
+        modal.showModal();
         console.log(k);
         console.log(answers[k]);
         if (e.target.innerHTML === answers[k])
