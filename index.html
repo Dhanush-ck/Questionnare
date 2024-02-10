@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Questionnare</title>
 </head>
 <body>
     <main>
-        <div id="que"></div>
-        <button id="a" class="option" popovertarget="next"></button>
-        <button id="b" class="option" popovertarget="next"></button>
-        <button id="c" class="option" popovertarget="next"></button>
-        <button id="d" class="option" popovertarget="next"></button>
-        <br>
-        <button onclick="update() ,hide()" id="start">Start</button>
-        <button id="next" onclick="next()" popover popovertarget="next">Next</button>
-        <br>
-        <div id="result"></div>
+        <div class="option-list">
+            <div id="que"></div>
+            <button id="a" class="option" popovertarget="next"></button>
+            <button id="b" class="option" popovertarget="next"></button>
+            <button id="c" class="option" popovertarget="next"></button>
+            <button id="d" class="option" popovertarget="next"></button>
+            <br>
+            <div id="hide">
+                <button onclick="update(), hide()" id="start">Start</button>
+            </div>
+        </div>
+        <dialog id="modal"> 
+            <div class="dialog-align">
+                <div id="result"></div>
+                <br>   
+                <button id="next" onclick="next()">Next</button>
+            </div>
+        </dialog>
     </main>
     <script src="script.js"></script>
     
