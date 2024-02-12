@@ -55,6 +55,19 @@ function next() {
         });
         document.getElementById('hide').style.display = 'flex';
         document.getElementById('start').innerHTML = 'Play Again';
+        // nxt.innerHTML = "Show Result";
+        i=0, k=0;
+    }
+    if (result.innerHTML === "Wrong Answer") {
+        message.innerHTML = "You Got";
+        que.style.display = 'none';
+        let arr = Array.from(option);
+        arr.forEach(buttonId=> {
+            const opt = document.getElementById(buttonId);
+            opt.style.display = 'none';
+        });
+        document.getElementById('hide').style.display = 'flex';
+        document.getElementById('start').innerHTML = 'Play Again';
         i=0, k=0;
     }
     // console.log(k);
@@ -80,12 +93,18 @@ const option = ['a', 'b', 'c', 'd'];
 option.forEach(buttonId=> {
     const opt = document.getElementById(buttonId);
     opt.addEventListener('click', (e)=> {
+        if ((e.target.innerHTML === answers[k])&&(k===questions.length-1)) {
+            nxt.innerHTML = "Show Result";
+        }
         modal.showModal();
         // console.log(k);
         // console.log(answers[k]);
         if (e.target.innerHTML === answers[k])
-            result.innerHTML = "Right Answer";
-        else
-            result.innerHTML = "Wrong Answer";
-    })
+        result.innerHTML = "Right Answer";
+    else
+    {
+        result.innerHTML = "Wrong Answer";
+        nxt.innerHTML = "Show Result";
+    }    
+});
 });
