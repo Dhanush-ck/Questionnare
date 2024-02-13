@@ -55,7 +55,6 @@ function next() {
         });
         document.getElementById('hide').style.display = 'flex';
         document.getElementById('start').innerHTML = 'Play Again';
-        // nxt.innerHTML = "Show Result";
         i=0, k=0;
     }
     if (result.innerHTML === "Wrong Answer") {
@@ -99,12 +98,19 @@ option.forEach(buttonId=> {
         modal.showModal();
         // console.log(k);
         // console.log(answers[k]);
-        if (e.target.innerHTML === answers[k])
-        result.innerHTML = "Right Answer";
-    else
-    {
-        result.innerHTML = "Wrong Answer";
-        nxt.innerHTML = "Show Result";
-    }    
+        if (e.target.innerHTML === answers[k]) {
+            result.innerHTML = "Right Answer";
+            e.target.style.backgroundColor = "Green";
+        }
+        else
+        {
+            result.innerHTML = "Wrong Answer";
+            nxt.innerHTML = "Show Result";
+            e.target.style.backgroundColor = "Red";
+        }    
+        nxt.addEventListener('click',()=>{
+            e.target.style.backgroundColor = "#ffffff";
+            
+        })
 });
 });
