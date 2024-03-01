@@ -1,6 +1,6 @@
-let questions = ["Who is the father of Computer?","How many Bits make one Byte?", "Which electronic component was used in the first generation of computers?", "What is the full form of RAM?", "An address given to a computer connected to a network is called ?"];
-const optns = [["Charles Babbage", "Alan Turing", "Konrad Zuse", "Ada Lovelavce"], ["16 Bits", "32 Bits", "8 Bits", "64 Bits"], ["Vaccum Tube", "Transistor", "Microprocessor", "Integrated Circuit(IC)"], ["Random Applicable Memory", "Read Access Memory", "Read Applicable Memory", "Random Acces Memory"], ["Local address", "Localhost", "Network address", "IP adderss"]];
-let answers = ["Charles Babbage", "8 Bits", "Vaccum Tube", "Random Acces Memory", "IP adderss"];
+let questions = ["Who is the father of Computer?","How many Bits make one Byte?", "Which electronic component was used in the first generation of computers?", "What is the full form of RAM?", "An address given to a computer connected to a network is called ?", "C, Java, C++ and PHP are examples for?"];
+const optns = [["Charles Babbage", "Alan Turing", "Konrad Zuse", "Ada Lovelavce"], ["16 Bits", "32 Bits", "8 Bits", "64 Bits"], ["Vaccum Tube", "Transistor", "Microprocessor", "Integrated Circuit(IC)"], ["Random Applicable Memory", "Read Access Memory", "Read Applicable Memory", "Random Acces Memory"], ["Local address", "Localhost", "Network address", "IP adderss"], ["Software Types", "Firmware", "Programming Languages", "Programming Translators"]];
+let answers = ["Charles Babbage", "8 Bits", "Vaccum Tube", "Random Acces Memory", "IP adderss", "Programming Languages"];
 
 var que = document.getElementById('que');
 var result = document.getElementById('result');
