@@ -4,9 +4,66 @@
 
 //questions
 
-const question = { questions : ["Who is the father of Computer?","How many Bits make one Byte?", "Which electronic component was used in the first generation of computers?", "What is the full form of RAM?", "An address given to a computer connected to a network is called ?", "C, Java, C++ and PHP are examples for?", "The term 'Pentium' is related to?"], 
-answers : ["Charles Babbage", "8 Bits", "Vaccum Tube", "Random Acces Memory", "IP adderss", "Programming Languages", "Microprocessor"], 
-optns : [{optn : ["Charles Babbage", "Alan Turing", "Konrad Zuse", "Ada Lovelavce"]}, {optn : ["16 Bits", "32 Bits", "8 Bits", "64 Bits"]}, {optn : ["Vaccum Tube", "Transistor", "Microprocessor", "Integrated Circuit(IC)"]}, {optn: ["Random Applicable Memory", "Read Access Memory", "Read Applicable Memory", "Random Acces Memory"]}, {optn : ["Local address", "Localhost", "Network address", "IP adderss"]}, {optn : ["Software Types", "Firmware", "Programming Languages", "Programming Translators"]}, {optn : ["Microprocessor", "CMOS", "Motherboard", "OS"]}] };
+const question = { 
+    questions : [
+        "Who is the father of Computer?",
+        "How many Bits make one Byte?", 
+        "Which electronic component was used in the first generation of computers?",
+        "What is the full form of RAM?", 
+        "An address given to a computer connected to a network is called ?", 
+        "C, Java, C++ and PHP are examples for?", "The term 'Pentium' is related to?"], 
+    answers : [
+        "Charles Babbage", 
+        "8 Bits", 
+        "Vaccum Tube", 
+        "Random Acces Memory", 
+        "IP adderss", 
+        "Programming Languages", 
+        "Microprocessor"], 
+    optns : [
+        {
+            optn : [
+                "Charles Babbage", 
+                "Alan Turing", 
+                "Konrad Zuse", 
+                "Ada Lovelavce"]
+            }, 
+            {optn : [
+                "16 Bits", 
+                "32 Bits", 
+                "8 Bits", 
+                "64 Bits"]
+            }, 
+            {optn : [
+                "Vaccum Tube", 
+                "Transistor", 
+                "Microprocessor", 
+                "Integrated Circuit(IC)"]
+            }, 
+            {optn: [
+                "Random Applicable Memory", 
+                "Read Access Memory", 
+                "Read Applicable Memory", 
+                "Random Acces Memory"]
+            }, 
+            {optn : [
+                "Local address", 
+                "Localhost", 
+                "Network address", 
+                "IP adderss"]
+            }, 
+            {optn : [
+                "Software Types", 
+                "Firmware", 
+                "Programming Languages", 
+                "Programming Translators"]
+            }, 
+            {optn : [
+                "Microprocessor", 
+                "CMOS", 
+                "Motherboard", 
+                "OS"]
+            }] };
 
 //variable declarations
 
